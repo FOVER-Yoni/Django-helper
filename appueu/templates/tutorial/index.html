@@ -1,0 +1,33 @@
+{% extends "tutorial/base.html" %}
+{% load static %}
+
+
+{% block title %}
+
+
+<title>Hallo!</title>
+
+{% endblock title %}
+
+
+
+
+
+{% block content %}
+
+<div class="container">
+{% for result in keys %}
+
+<h2 class="item">{{result.name}} - {{result.description}}</h2>
+
+
+
+{% endfor %}
+
+
+</div>
+<a href="{% url 'appueu:hohoho' %}">
+    Hohoho
+</a>
+{% endblock content %}
+

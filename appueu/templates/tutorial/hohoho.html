@@ -1,0 +1,18 @@
+{% extends "tutorial/base.html" %}
+{% load static %}
+
+
+{% block title %}
+
+
+<title>Hello!</title>
+
+{% endblock title %}
+
+
+
+{% block content %}
+<div>
+<img src="{% static 'myproject/images/war.png' %}">
+</div>
+{% endblock content %}
